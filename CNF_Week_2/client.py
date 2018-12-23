@@ -10,7 +10,7 @@ def main():
     threading.Thread(target = recovary, args = (s, )).start()
 
     while True:
-        message = input(" Enter your Query :")
+        message = input("message")
         s.send((message).encode())
     s.close()
 
